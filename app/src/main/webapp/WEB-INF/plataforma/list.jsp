@@ -13,16 +13,14 @@
             <a href="/plataforma/insert" class="btn btn-primary">Novo Plataforma</a>
             <table class="table">
                 <tr>
-                    <th>Id</th>
-                    <th>Titulo</th>
-                    <th>Ano De Lançamento</th>
+                    <th>Nome</th>
+                    <th>Fornecedor</th>
                     <th>&nbsp;</th>
                 </tr>
-                <c:forEach var="item" items="${jogos}">
+                <c:forEach var="item" items="${plataformas}">
                     <tr>
-                        <td>${item.id}</td>
-                        <td>${item.titulo}</td>
-                        <td>${item.anoDeLancamento}</td>
+                        <td>${item.nome}</td>
+                        <td>${item.fornecedor}</td>
                         <td>
                             <a href="/jogo/update?id=${item.id}" class="btn btn-warning">Editar</a>
                             <a href="/jogo/delete?id=${item.id}" class="btn btn-danger">Excluir</a>
