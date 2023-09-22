@@ -17,7 +17,7 @@
                     <th>Fornecedor</th>
                     <th>&nbsp;</th>
                 </tr>
-                <c:forEach var="item" items="${plataformas}">
+                <c:forEach var="item" items="${plataforma}">
                     <tr>
                         <td>${item.nome}</td>
                         <td>${item.fornecedor}</td>
